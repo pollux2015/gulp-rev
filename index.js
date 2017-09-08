@@ -106,9 +106,8 @@ var plugin = function () {
 };
 
 plugin.manifest = function (pth, opts) {
-	console.log('path:' + pth)
-	console.log(opts)
 	const symbol = opts.key || 'v';
+	console.log(symbol)
 	if (typeof pth === 'string') {
 		pth = {path: pth};
 	}
