@@ -132,7 +132,7 @@ plugin.manifest = function (pth, opts) {
 		var revisionedFile = relPath(firstFileBase, file.path);
 		var originalFile = path.join(path.dirname(revisionedFile), path.basename(file.revOrigPath)).replace(/\\/g, '/');
 
-		manifest[originalFile] = originalFile + '?v=' + file.revHash;
+		manifest[originalFile] = originalFile + '?v3232=' + file.revHash;
 
 		cb();
 	}, function (cb) {
